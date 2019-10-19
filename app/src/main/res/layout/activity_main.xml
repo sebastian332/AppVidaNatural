@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@color/Azul">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"></LinearLayout>
+
+            <ImageView
+                android:id="@+id/Imagen"
+                android:layout_width="134dp"
+                android:layout_height="127dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="60dp"
+                android:src="@drawable/user" />
+
+
+
+            <EditText
+                android:textSize="30dp"
+                android:id="@+id/edtNombreUsuario"
+                android:layout_width="400dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/Imagen"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="30dp"
+                android:textColorHint="@android:color/black"
+                android:textColor="@android:color/black"
+                android:hint="Usuario"/>
+
+            <EditText
+                android:textSize="30dp"
+                android:id="@+id/EditCotraseña"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/edtNombreUsuario"
+                android:hint="Contraseña"
+                android:textColorHint="@android:color/black"
+                android:textColor="@android:color/black"
+                android:layout_marginTop="20dp"
+                android:inputType="textPassword"
+                />
+
+            <Button
+                android:id="@+id/BtnIngresar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/EditCotraseña"
+                android:text="Ingresar"
+                android:textSize="20dp"
+                android:layout_marginTop="50dp"
+                android:background="@color/Verde"
+                />
+
+
+            <Button
+                android:id="@+id/BtnRegistrar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="7dp"
+                android:background="@color/Verde"
+                android:text="Registrar"
+                android:textSize="20dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:text="Sena Centro de comercio y servicio"
+                android:textColor="@color/primary_text"
+                android:textSize="15dp"
+                android:layout_marginTop="178dp"
+                android:layout_marginLeft="60dp"
+                />
+
+        </LinearLayout>
+
+
+    </ScrollView>
+</RelativeLayout>
