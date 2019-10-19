@@ -16,6 +16,7 @@ public class Giroscopio extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+
         setContentView(R.layout.activity_giroscopio);
         SensorManager sensorManager =
                 (SensorManager) getSystemService(SENSOR_SERVICE);
